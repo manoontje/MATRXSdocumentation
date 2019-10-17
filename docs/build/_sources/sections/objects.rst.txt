@@ -10,16 +10,13 @@ Object placement
 .. autosummary::
    :toctree: _generated_autodoc
 
-   matrxs.objects.env_object
-   matrxs.objects.simple_objects
+
    matrxs.objects.env_object.EnvObject
    matrxs.objects.simple_objects.Wall
    matrxs.objects.simple_objects.Door
    matrxs.objects.simple_objects.SquareBlock
    matrxs.objects.simple_objects.AreaTile
    matrxs.objects.simple_objects.SmokeTile
-   matrxs.objects.agent_body
    matrxs.objects.agent_body.AgentBody
-   matrxs.objects.advanced_objects
    matrxs.objects.advanced_objects.Battery
 

@@ -177,9 +177,42 @@
 <dl class="class">
 <dt id="matrxs.utils.agent_utils.navigator.Navigator">
 <em class="property">class </em><code class="sig-prename descclassname">matrxs.utils.agent_utils.navigator.</code><code class="sig-name descname">Navigator</code><span class="sig-paren">(</span><em class="sig-param">agent_id</em>, <em class="sig-param">action_set</em>, <em class="sig-param">algorithm='a_star'</em>, <em class="sig-param">is_circular=False</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
+<dd><p class="rubric">Methods</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 72%" />
+<col style="width: 28%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>add_waypoint</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>add_waypoints</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>get_all_waypoints</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>get_current_waypoint</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>get_move_action</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>get_upcoming_waypoints</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>reset</strong></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>reset_full</strong></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
 <dt id="matrxs.utils.agent_utils.navigator.Navigator.__init__">
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">agent_id</em>, <em class="sig-param">action_set</em>, <em class="sig-param">algorithm='a_star'</em>, <em class="sig-param">is_circular=False</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">agent_id</em>, <em class="sig-param">action_set</em>, <em class="sig-param">algorithm='a_star'</em>, <em class="sig-param">is_circular=False</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
 </dd></dl>
 
@@ -190,31 +223,31 @@
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.__init__" title="matrxs.utils.agent_utils.navigator.Navigator.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(agent_id, action_set[, algorithm, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.__init__" title="matrxs.utils.agent_utils.navigator.Navigator.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(self, agent_id, action_set[, …])</p></td>
 <td><p>Initialize self.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.add_waypoint" title="matrxs.utils.agent_utils.navigator.Navigator.add_waypoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_waypoint</span></code></a>(waypoint)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.add_waypoint" title="matrxs.utils.agent_utils.navigator.Navigator.add_waypoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_waypoint</span></code></a>(self, waypoint)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.add_waypoints" title="matrxs.utils.agent_utils.navigator.Navigator.add_waypoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_waypoints</span></code></a>(waypoints[, is_circular])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.add_waypoints" title="matrxs.utils.agent_utils.navigator.Navigator.add_waypoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_waypoints</span></code></a>(self, waypoints[, is_circular])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.get_all_waypoints" title="matrxs.utils.agent_utils.navigator.Navigator.get_all_waypoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_all_waypoints</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.get_all_waypoints" title="matrxs.utils.agent_utils.navigator.Navigator.get_all_waypoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_all_waypoints</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.get_current_waypoint" title="matrxs.utils.agent_utils.navigator.Navigator.get_current_waypoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_current_waypoint</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.get_current_waypoint" title="matrxs.utils.agent_utils.navigator.Navigator.get_current_waypoint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_current_waypoint</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.get_move_action" title="matrxs.utils.agent_utils.navigator.Navigator.get_move_action"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_move_action</span></code></a>(state_tracker)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.get_move_action" title="matrxs.utils.agent_utils.navigator.Navigator.get_move_action"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_move_action</span></code></a>(self, state_tracker)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.get_upcoming_waypoints" title="matrxs.utils.agent_utils.navigator.Navigator.get_upcoming_waypoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_upcoming_waypoints</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.get_upcoming_waypoints" title="matrxs.utils.agent_utils.navigator.Navigator.get_upcoming_waypoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_upcoming_waypoints</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.reset" title="matrxs.utils.agent_utils.navigator.Navigator.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.reset" title="matrxs.utils.agent_utils.navigator.Navigator.reset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.reset_full" title="matrxs.utils.agent_utils.navigator.Navigator.reset_full"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset_full</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.utils.agent_utils.navigator.Navigator.reset_full" title="matrxs.utils.agent_utils.navigator.Navigator.reset_full"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reset_full</span></code></a>(self)</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -238,48 +271,48 @@
 
 <dl class="method">
 <dt>
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">agent_id</em>, <em class="sig-param">action_set</em>, <em class="sig-param">algorithm='a_star'</em>, <em class="sig-param">is_circular=False</em><span class="sig-paren">)</span></dt>
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">agent_id</em>, <em class="sig-param">action_set</em>, <em class="sig-param">algorithm='a_star'</em>, <em class="sig-param">is_circular=False</em><span class="sig-paren">)</span></dt>
 <dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="matrxs.utils.agent_utils.navigator.Navigator.add_waypoint">
-<code class="sig-name descname">add_waypoint</code><span class="sig-paren">(</span><em class="sig-param">waypoint</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.add_waypoint" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">add_waypoint</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">waypoint</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.add_waypoint" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="matrxs.utils.agent_utils.navigator.Navigator.add_waypoints">
-<code class="sig-name descname">add_waypoints</code><span class="sig-paren">(</span><em class="sig-param">waypoints</em>, <em class="sig-param">is_circular=False</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.add_waypoints" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">add_waypoints</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">waypoints</em>, <em class="sig-param">is_circular=False</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.add_waypoints" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="matrxs.utils.agent_utils.navigator.Navigator.get_all_waypoints">
-<code class="sig-name descname">get_all_waypoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.get_all_waypoints" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_all_waypoints</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.get_all_waypoints" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="matrxs.utils.agent_utils.navigator.Navigator.get_upcoming_waypoints">
-<code class="sig-name descname">get_upcoming_waypoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.get_upcoming_waypoints" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_upcoming_waypoints</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.get_upcoming_waypoints" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="matrxs.utils.agent_utils.navigator.Navigator.get_current_waypoint">
-<code class="sig-name descname">get_current_waypoint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.get_current_waypoint" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_current_waypoint</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.get_current_waypoint" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="matrxs.utils.agent_utils.navigator.Navigator.get_move_action">
-<code class="sig-name descname">get_move_action</code><span class="sig-paren">(</span><em class="sig-param">state_tracker: matrxs.utils.agent_utils.state_tracker.StateTracker</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.get_move_action" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_move_action</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">state_tracker: matrxs.utils.agent_utils.state_tracker.StateTracker</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.get_move_action" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="matrxs.utils.agent_utils.navigator.Navigator.reset">
-<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.reset" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.reset" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="matrxs.utils.agent_utils.navigator.Navigator.reset_full">
-<code class="sig-name descname">reset_full</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.reset_full" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">reset_full</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.utils.agent_utils.navigator.Navigator.reset_full" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>

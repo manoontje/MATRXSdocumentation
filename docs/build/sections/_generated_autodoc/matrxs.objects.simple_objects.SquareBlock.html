@@ -181,9 +181,37 @@
 <dl class="class">
 <dt id="matrxs.objects.simple_objects.SquareBlock">
 <em class="property">class </em><code class="sig-prename descclassname">matrxs.objects.simple_objects.</code><code class="sig-name descname">SquareBlock</code><span class="sig-paren">(</span><em class="sig-param">location</em>, <em class="sig-param">name='Block'</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.objects.simple_objects.SquareBlock" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
+<dd><dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">location</span></code></dt><dd><p>The location of any object is a pythonic property, this allows us to do various checks on it.</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">properties</span></code></dt><dd><p>Returns the custom properties of this object, but also any mandatory properties such as location, name, is_traversable and all visualization properties (those are in their own dictionary under ‘visualization’).</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_property</span></code>(self, property_name, property_value)</p></td>
+<td><p>Adds a new(!) property with its value to the object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">change_property</span></code>(self, property_name, …)</p></td>
+<td><p>Changes the value of an existing (!) property.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code>(self, grid_world)</p></td>
+<td><p>Used to update some properties of this object if needed.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
 <dt id="matrxs.objects.simple_objects.SquareBlock.__init__">
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">location</em>, <em class="sig-param">name='Block'</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.objects.simple_objects.SquareBlock.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">location</em>, <em class="sig-param">name='Block'</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.objects.simple_objects.SquareBlock.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>An example of a simple object with a set of attributes that are always the same. In this case that it is not
 traversable, and is visualized as a square. Otherwise it takes all default properties from an EnvObject and has
 not other custom properties.
@@ -198,16 +226,16 @@ not other custom properties.
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.objects.simple_objects.SquareBlock.__init__" title="matrxs.objects.simple_objects.SquareBlock.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(location[, name])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.objects.simple_objects.SquareBlock.__init__" title="matrxs.objects.simple_objects.SquareBlock.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(self, location[, name])</p></td>
 <td><p>An example of a simple object with a set of attributes that are always the same.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_property</span></code>(property_name, property_value)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_property</span></code>(self, property_name, property_value)</p></td>
 <td><p>Adds a new(!) property with its value to the object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">change_property</span></code>(property_name, property_value)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">change_property</span></code>(self, property_name, …)</p></td>
 <td><p>Changes the value of an existing (!) property.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code>(grid_world)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code>(self, grid_world)</p></td>
 <td><p>Used to update some properties of this object if needed.</p></td>
 </tr>
 </tbody>
@@ -229,7 +257,7 @@ not other custom properties.
 </table>
 <dl class="method">
 <dt>
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">location</em>, <em class="sig-param">name='Block'</em><span class="sig-paren">)</span></dt>
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">location</em>, <em class="sig-param">name='Block'</em><span class="sig-paren">)</span></dt>
 <dd><p>An example of a simple object with a set of attributes that are always the same. In this case that it is not
 traversable, and is visualized as a square. Otherwise it takes all default properties from an EnvObject and has
 not other custom properties.

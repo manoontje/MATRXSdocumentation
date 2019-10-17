@@ -177,9 +177,41 @@
 <dl class="class">
 <dt id="matrxs.agents.patrolling_agent.PatrollingAgentBrain">
 <em class="property">class </em><code class="sig-prename descclassname">matrxs.agents.patrolling_agent.</code><code class="sig-name descname">PatrollingAgentBrain</code><span class="sig-paren">(</span><em class="sig-param">waypoints</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
+<dd><p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.decide_on_action" title="matrxs.agents.patrolling_agent.PatrollingAgentBrain.decide_on_action"><code class="xref py py-obj docutils literal notranslate"><span class="pre">decide_on_action</span></code></a>(self, state)</p></td>
+<td><p>In this method you compute your action.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.filter_observations" title="matrxs.agents.patrolling_agent.PatrollingAgentBrain.filter_observations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter_observations</span></code></a>(self, state)</p></td>
+<td><p>In this method you filter the state to only those properties and objects the agent is actually SUPPOSED to see.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.initialize" title="matrxs.agents.patrolling_agent.PatrollingAgentBrain.initialize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialize</span></code></a>(self)</p></td>
+<td><p>Method called the very first time this AgentBrain is called from the world.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_message</span></code>(self, message_content, dict], …)</p></td>
+<td><p>Method that allows you to construct a message that will be send to either a specified agent, a team of agents or all agents.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 69%" />
+<col style="width: 31%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>is_action_possible</strong></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
 <dt id="matrxs.agents.patrolling_agent.PatrollingAgentBrain.__init__">
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">waypoints</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">waypoints</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates an Agent. All other agents should inherit from this class if you want smarter agents. This agent
 simply randomly selects an action from the possible actions it can do.</p>
 </dd></dl>
@@ -191,36 +223,36 @@ simply randomly selects an action from the possible actions it can do.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.__init__" title="matrxs.agents.patrolling_agent.PatrollingAgentBrain.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(waypoints)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.__init__" title="matrxs.agents.patrolling_agent.PatrollingAgentBrain.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(self, waypoints)</p></td>
 <td><p>Creates an Agent.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.decide_on_action" title="matrxs.agents.patrolling_agent.PatrollingAgentBrain.decide_on_action"><code class="xref py py-obj docutils literal notranslate"><span class="pre">decide_on_action</span></code></a>(state)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.decide_on_action" title="matrxs.agents.patrolling_agent.PatrollingAgentBrain.decide_on_action"><code class="xref py py-obj docutils literal notranslate"><span class="pre">decide_on_action</span></code></a>(self, state)</p></td>
 <td><p>In this method you compute your action.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.filter_observations" title="matrxs.agents.patrolling_agent.PatrollingAgentBrain.filter_observations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter_observations</span></code></a>(state)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.filter_observations" title="matrxs.agents.patrolling_agent.PatrollingAgentBrain.filter_observations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter_observations</span></code></a>(self, state)</p></td>
 <td><p>In this method you filter the state to only those properties and objects the agent is actually SUPPOSED to see.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.initialize" title="matrxs.agents.patrolling_agent.PatrollingAgentBrain.initialize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialize</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.initialize" title="matrxs.agents.patrolling_agent.PatrollingAgentBrain.initialize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialize</span></code></a>(self)</p></td>
 <td><p>Method called the very first time this AgentBrain is called from the world.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_action_possible</span></code>(action, action_kwargs)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_action_possible</span></code>(self, action, action_kwargs)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_message</span></code>(message_content[, to_id])</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_message</span></code>(self, message_content, dict], …)</p></td>
 <td><p>Method that allows you to construct a message that will be send to either a specified agent, a team of agents or all agents.</p></td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
 <dt>
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">waypoints</em><span class="sig-paren">)</span></dt>
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">waypoints</em><span class="sig-paren">)</span></dt>
 <dd><p>Creates an Agent. All other agents should inherit from this class if you want smarter agents. This agent
 simply randomly selects an action from the possible actions it can do.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="matrxs.agents.patrolling_agent.PatrollingAgentBrain.initialize">
-<code class="sig-name descname">initialize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.initialize" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">initialize</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.initialize" title="Permalink to this definition">¶</a></dt>
 <dd><p>Method called the very first time this AgentBrain is called from the world. Here you can initialize everything
 you need for your agent to work since you can’t do much in the constructor as the brain needs to be connected to
 a GridWorld first in most cases (e.g. to get an AgentID, its random seed, etc.)</p>
@@ -228,7 +260,7 @@ a GridWorld first in most cases (e.g. to get an AgentID, its random seed, etc.)<
 
 <dl class="method">
 <dt id="matrxs.agents.patrolling_agent.PatrollingAgentBrain.filter_observations">
-<code class="sig-name descname">filter_observations</code><span class="sig-paren">(</span><em class="sig-param">state</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.filter_observations" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">filter_observations</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">state</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.filter_observations" title="Permalink to this definition">¶</a></dt>
 <dd><p>In this method you filter the state to only those properties and objects the agent is actually SUPPOSED to see.
 Since the grid world returns ALL properties of ALL objects within a certain range(s), but perhaps some objects
 are obscured because they are behind walls, or an agent is not able to see some properties an certain objects.</p>
@@ -245,7 +277,7 @@ sure all UI’s</p>
 
 <dl class="method">
 <dt id="matrxs.agents.patrolling_agent.PatrollingAgentBrain.decide_on_action">
-<code class="sig-name descname">decide_on_action</code><span class="sig-paren">(</span><em class="sig-param">state</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.decide_on_action" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">decide_on_action</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">state</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.agents.patrolling_agent.PatrollingAgentBrain.decide_on_action" title="Permalink to this definition">¶</a></dt>
 <dd><p>In this method you compute your action.</p>
 <p>For example, this default agent randomly selects an action from the possible_actions list. However,
 for smarter agents you need the state representation for example to know what a good action is. In addition

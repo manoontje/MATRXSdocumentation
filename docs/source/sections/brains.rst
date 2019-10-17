@@ -10,10 +10,7 @@ Brains
 .. autosummary::
    :toctree: _generated_autodoc
 
-   matrxs.agents.agent_brain
-   matrxs.agents.human_agent_brain
-   matrxs.agents.patrolling_agent
-   matrxs.agents.capabilities.capability
+
    matrxs.agents.agent_brain.AgentBrain
    matrxs.agents.human_agent_brain.HumanAgentBrain
    matrxs.agents.patrolling_agent.PatrollingAgentBrain

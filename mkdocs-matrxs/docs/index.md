@@ -2,8 +2,6 @@
 
 For full documentation visit [mkdocs.org](https://mkdocs.org).
 
-Kijk hier voor uitleg voor genereren autodocs https://github.com/erichulser/mkdocs_autodoc
-
 ## Commands
 
 * `mkdocs new [dir-name]` - Create a new project.

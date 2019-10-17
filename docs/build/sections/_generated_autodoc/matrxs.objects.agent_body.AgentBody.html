@@ -181,9 +181,37 @@
 <dl class="class">
 <dt id="matrxs.objects.agent_body.AgentBody">
 <em class="property">class </em><code class="sig-prename descclassname">matrxs.objects.agent_body.</code><code class="sig-name descname">AgentBody</code><span class="sig-paren">(</span><em class="sig-param">location</em>, <em class="sig-param">possible_actions</em>, <em class="sig-param">sense_capability</em>, <em class="sig-param">class_callable</em>, <em class="sig-param">callback_agent_get_action</em>, <em class="sig-param">callback_agent_set_action_result</em>, <em class="sig-param">callback_agent_observe</em>, <em class="sig-param">callback_agent_get_messages</em>, <em class="sig-param">callback_agent_set_messages</em>, <em class="sig-param">callback_agent_initialize</em>, <em class="sig-param">visualize_size</em>, <em class="sig-param">visualize_shape</em>, <em class="sig-param">visualize_colour</em>, <em class="sig-param">visualize_depth</em>, <em class="sig-param">visualize_opacity</em>, <em class="sig-param">is_traversable</em>, <em class="sig-param">team</em>, <em class="sig-param">agent_speed_in_ticks</em>, <em class="sig-param">name</em>, <em class="sig-param">is_movable</em>, <em class="sig-param">is_human_agent</em>, <em class="sig-param">customizable_properties</em>, <em class="sig-param">**custom_properties</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.objects.agent_body.AgentBody" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
+<dd><dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><a class="reference internal" href="#matrxs.objects.agent_body.AgentBody.location" title="matrxs.objects.agent_body.AgentBody.location"><code class="xref py py-obj docutils literal notranslate"><span class="pre">location</span></code></a></dt><dd><p>We override the location pythonic property here so we can override its setter.</p>
+</dd>
+<dt><a class="reference internal" href="#matrxs.objects.agent_body.AgentBody.properties" title="matrxs.objects.agent_body.AgentBody.properties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">properties</span></code></a></dt><dd><p>Returns the custom properties of this object, but also any mandatory properties such as location, name, is_traversable and all visualization properties (those are in their own dictionary under ‘visualization’).</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_property</span></code>(self, property_name, property_value)</p></td>
+<td><p>Adds a new(!) property with its value to the object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.objects.agent_body.AgentBody.change_property" title="matrxs.objects.agent_body.AgentBody.change_property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">change_property</span></code></a>(self, property_name, …)</p></td>
+<td><p>Changes the value of an existing (!) property.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code>(self, grid_world)</p></td>
+<td><p>Used to update some properties of this object if needed.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
 <dt id="matrxs.objects.agent_body.AgentBody.__init__">
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">location</em>, <em class="sig-param">possible_actions</em>, <em class="sig-param">sense_capability</em>, <em class="sig-param">class_callable</em>, <em class="sig-param">callback_agent_get_action</em>, <em class="sig-param">callback_agent_set_action_result</em>, <em class="sig-param">callback_agent_observe</em>, <em class="sig-param">callback_agent_get_messages</em>, <em class="sig-param">callback_agent_set_messages</em>, <em class="sig-param">callback_agent_initialize</em>, <em class="sig-param">visualize_size</em>, <em class="sig-param">visualize_shape</em>, <em class="sig-param">visualize_colour</em>, <em class="sig-param">visualize_depth</em>, <em class="sig-param">visualize_opacity</em>, <em class="sig-param">is_traversable</em>, <em class="sig-param">team</em>, <em class="sig-param">agent_speed_in_ticks</em>, <em class="sig-param">name</em>, <em class="sig-param">is_movable</em>, <em class="sig-param">is_human_agent</em>, <em class="sig-param">customizable_properties</em>, <em class="sig-param">**custom_properties</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.objects.agent_body.AgentBody.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">location</em>, <em class="sig-param">possible_actions</em>, <em class="sig-param">sense_capability</em>, <em class="sig-param">class_callable</em>, <em class="sig-param">callback_agent_get_action</em>, <em class="sig-param">callback_agent_set_action_result</em>, <em class="sig-param">callback_agent_observe</em>, <em class="sig-param">callback_agent_get_messages</em>, <em class="sig-param">callback_agent_set_messages</em>, <em class="sig-param">callback_agent_initialize</em>, <em class="sig-param">visualize_size</em>, <em class="sig-param">visualize_shape</em>, <em class="sig-param">visualize_colour</em>, <em class="sig-param">visualize_depth</em>, <em class="sig-param">visualize_opacity</em>, <em class="sig-param">is_traversable</em>, <em class="sig-param">team</em>, <em class="sig-param">agent_speed_in_ticks</em>, <em class="sig-param">name</em>, <em class="sig-param">is_movable</em>, <em class="sig-param">is_human_agent</em>, <em class="sig-param">customizable_properties</em>, <em class="sig-param">**custom_properties</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.objects.agent_body.AgentBody.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>This class is a representation of an agent’s body in the GridWorld.</p>
 <p>It is used as a measure to keep the AgentBrain code and Environment code separate. This AgentBody is used by
 the environment to update the GUI, perform actions, and update properties. It is kept in sync with the Agent’s
@@ -276,16 +304,16 @@ For example the property ‘heat’=2.4 of an EnvObject representing a fire.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.objects.agent_body.AgentBody.__init__" title="matrxs.objects.agent_body.AgentBody.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(location, possible_actions, …)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.objects.agent_body.AgentBody.__init__" title="matrxs.objects.agent_body.AgentBody.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(self, location, possible_actions, …)</p></td>
 <td><p>This class is a representation of an agent’s body in the GridWorld.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_property</span></code>(property_name, property_value)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_property</span></code>(self, property_name, property_value)</p></td>
 <td><p>Adds a new(!) property with its value to the object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.objects.agent_body.AgentBody.change_property" title="matrxs.objects.agent_body.AgentBody.change_property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">change_property</span></code></a>(property_name, property_value)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.objects.agent_body.AgentBody.change_property" title="matrxs.objects.agent_body.AgentBody.change_property"><code class="xref py py-obj docutils literal notranslate"><span class="pre">change_property</span></code></a>(self, property_name, …)</p></td>
 <td><p>Changes the value of an existing (!) property.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code>(grid_world)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code>(self, grid_world)</p></td>
 <td><p>Used to update some properties of this object if needed.</p></td>
 </tr>
 </tbody>
@@ -307,7 +335,7 @@ For example the property ‘heat’=2.4 of an EnvObject representing a fire.</p>
 </table>
 <dl class="method">
 <dt>
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">location</em>, <em class="sig-param">possible_actions</em>, <em class="sig-param">sense_capability</em>, <em class="sig-param">class_callable</em>, <em class="sig-param">callback_agent_get_action</em>, <em class="sig-param">callback_agent_set_action_result</em>, <em class="sig-param">callback_agent_observe</em>, <em class="sig-param">callback_agent_get_messages</em>, <em class="sig-param">callback_agent_set_messages</em>, <em class="sig-param">callback_agent_initialize</em>, <em class="sig-param">visualize_size</em>, <em class="sig-param">visualize_shape</em>, <em class="sig-param">visualize_colour</em>, <em class="sig-param">visualize_depth</em>, <em class="sig-param">visualize_opacity</em>, <em class="sig-param">is_traversable</em>, <em class="sig-param">team</em>, <em class="sig-param">agent_speed_in_ticks</em>, <em class="sig-param">name</em>, <em class="sig-param">is_movable</em>, <em class="sig-param">is_human_agent</em>, <em class="sig-param">customizable_properties</em>, <em class="sig-param">**custom_properties</em><span class="sig-paren">)</span></dt>
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">location</em>, <em class="sig-param">possible_actions</em>, <em class="sig-param">sense_capability</em>, <em class="sig-param">class_callable</em>, <em class="sig-param">callback_agent_get_action</em>, <em class="sig-param">callback_agent_set_action_result</em>, <em class="sig-param">callback_agent_observe</em>, <em class="sig-param">callback_agent_get_messages</em>, <em class="sig-param">callback_agent_set_messages</em>, <em class="sig-param">callback_agent_initialize</em>, <em class="sig-param">visualize_size</em>, <em class="sig-param">visualize_shape</em>, <em class="sig-param">visualize_colour</em>, <em class="sig-param">visualize_depth</em>, <em class="sig-param">visualize_opacity</em>, <em class="sig-param">is_traversable</em>, <em class="sig-param">team</em>, <em class="sig-param">agent_speed_in_ticks</em>, <em class="sig-param">name</em>, <em class="sig-param">is_movable</em>, <em class="sig-param">is_human_agent</em>, <em class="sig-param">customizable_properties</em>, <em class="sig-param">**custom_properties</em><span class="sig-paren">)</span></dt>
 <dd><p>This class is a representation of an agent’s body in the GridWorld.</p>
 <p>It is used as a measure to keep the AgentBrain code and Environment code separate. This AgentBody is used by
 the environment to update the GUI, perform actions, and update properties. It is kept in sync with the Agent’s
@@ -395,7 +423,7 @@ For example the property ‘heat’=2.4 of an EnvObject representing a fire.</p>
 
 <dl class="method">
 <dt id="matrxs.objects.agent_body.AgentBody.change_property">
-<code class="sig-name descname">change_property</code><span class="sig-paren">(</span><em class="sig-param">property_name</em>, <em class="sig-param">property_value</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.objects.agent_body.AgentBody.change_property" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">change_property</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">property_name</em>, <em class="sig-param">property_value</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.objects.agent_body.AgentBody.change_property" title="Permalink to this definition">¶</a></dt>
 <dd><p>Changes the value of an existing (!) property.
 :param property_name: The name of the property.
 :param property_value:  The value of the property.

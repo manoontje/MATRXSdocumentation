@@ -181,9 +181,37 @@
 <dl class="class">
 <dt id="matrxs.objects.advanced_objects.Battery">
 <em class="property">class </em><code class="sig-prename descclassname">matrxs.objects.advanced_objects.</code><code class="sig-name descname">Battery</code><span class="sig-paren">(</span><em class="sig-param">location</em>, <em class="sig-param">name='Battery'</em>, <em class="sig-param">start_energy_level=1.0</em>, <em class="sig-param">energy_decay=0.01</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.objects.advanced_objects.Battery" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
+<dd><dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">location</span></code></dt><dd><p>The location of any object is a pythonic property, this allows us to do various checks on it.</p>
+</dd>
+<dt><code class="xref py py-obj docutils literal notranslate"><span class="pre">properties</span></code></dt><dd><p>Returns the custom properties of this object, but also any mandatory properties such as location, name, is_traversable and all visualization properties (those are in their own dictionary under ‘visualization’).</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_property</span></code>(self, property_name, property_value)</p></td>
+<td><p>Adds a new(!) property with its value to the object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">change_property</span></code>(self, property_name, …)</p></td>
+<td><p>Changes the value of an existing (!) property.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.objects.advanced_objects.Battery.update" title="matrxs.objects.advanced_objects.Battery.update"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code></a>(self, grid_world)</p></td>
+<td><p>Updates the current energy level, changes the property accordingly, and also change the visualization color.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
 <dt id="matrxs.objects.advanced_objects.Battery.__init__">
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">location</em>, <em class="sig-param">name='Battery'</em>, <em class="sig-param">start_energy_level=1.0</em>, <em class="sig-param">energy_decay=0.01</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.objects.advanced_objects.Battery.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">location</em>, <em class="sig-param">name='Battery'</em>, <em class="sig-param">start_energy_level=1.0</em>, <em class="sig-param">energy_decay=0.01</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.objects.advanced_objects.Battery.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>A simple exanple of an object with an update_properties method that is called each simulation step. It also has
 two default properties that are unique to this object; start_energy_level, and energy_decay. These are added
 as properties by passing them as keyword arguments to the constructor of EnvObject. In addition this constructor
@@ -213,16 +241,16 @@ accordingly.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.objects.advanced_objects.Battery.__init__" title="matrxs.objects.advanced_objects.Battery.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(location[, name, …])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.objects.advanced_objects.Battery.__init__" title="matrxs.objects.advanced_objects.Battery.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(self, location[, name, …])</p></td>
 <td><p>A simple exanple of an object with an update_properties method that is called each simulation step.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_property</span></code>(property_name, property_value)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_property</span></code>(self, property_name, property_value)</p></td>
 <td><p>Adds a new(!) property with its value to the object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">change_property</span></code>(property_name, property_value)</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">change_property</span></code>(self, property_name, …)</p></td>
 <td><p>Changes the value of an existing (!) property.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.objects.advanced_objects.Battery.update" title="matrxs.objects.advanced_objects.Battery.update"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code></a>(grid_world)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.objects.advanced_objects.Battery.update" title="matrxs.objects.advanced_objects.Battery.update"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code></a>(self, grid_world)</p></td>
 <td><p>Updates the current energy level, changes the property accordingly, and also change the visualization color.</p></td>
 </tr>
 </tbody>
@@ -244,7 +272,7 @@ accordingly.</p>
 </table>
 <dl class="method">
 <dt>
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">location</em>, <em class="sig-param">name='Battery'</em>, <em class="sig-param">start_energy_level=1.0</em>, <em class="sig-param">energy_decay=0.01</em><span class="sig-paren">)</span></dt>
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">location</em>, <em class="sig-param">name='Battery'</em>, <em class="sig-param">start_energy_level=1.0</em>, <em class="sig-param">energy_decay=0.01</em><span class="sig-paren">)</span></dt>
 <dd><p>A simple exanple of an object with an update_properties method that is called each simulation step. It also has
 two default properties that are unique to this object; start_energy_level, and energy_decay. These are added
 as properties by passing them as keyword arguments to the constructor of EnvObject. In addition this constructor
@@ -269,7 +297,7 @@ accordingly.</p>
 
 <dl class="method">
 <dt id="matrxs.objects.advanced_objects.Battery.update">
-<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param">grid_world</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.objects.advanced_objects.Battery.update" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">grid_world</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.objects.advanced_objects.Battery.update" title="Permalink to this definition">¶</a></dt>
 <dd><p>Updates the current energy level, changes the property accordingly, and also change the visualization color.
 :param grid_world: The state of the world. Not used.
 :return: The new properties</p>

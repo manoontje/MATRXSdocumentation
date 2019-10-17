@@ -14,6 +14,5 @@ Visualization
    matrxs.visualization.logMatrx
    matrxs.visualization.server
    matrxs.visualization.visualizer.Visualizer
-   matrxs.visualization.visualizer
 
 

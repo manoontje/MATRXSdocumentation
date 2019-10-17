@@ -177,9 +177,44 @@
 <dl class="class">
 <dt id="matrxs.agents.human_agent_brain.HumanAgentBrain">
 <em class="property">class </em><code class="sig-prename descclassname">matrxs.agents.human_agent_brain.</code><code class="sig-name descname">HumanAgentBrain</code><a class="headerlink" href="#matrxs.agents.human_agent_brain.HumanAgentBrain" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
+<dd><p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">decide_on_action</span></code>(self, state)</p></td>
+<td><p>In this method you compute your action.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.agents.human_agent_brain.HumanAgentBrain.filter_observations" title="matrxs.agents.human_agent_brain.HumanAgentBrain.filter_observations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter_observations</span></code></a>(self, state)</p></td>
+<td><p>All our agent work through the OODA-loop paradigm; first you observe, then you orient/pre-process, followed by a decision process of an action after which we act upon the action.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.agents.human_agent_brain.HumanAgentBrain.filter_userinputs" title="matrxs.agents.human_agent_brain.HumanAgentBrain.filter_userinputs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter_userinputs</span></code></a>(self, userinputs)</p></td>
+<td><p>From the received userinput, only keep those which are actually Connected to a specific agent action</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialize</span></code>(self)</p></td>
+<td><p>Method called the very first time this AgentBrain is called from the world.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_message</span></code>(self, message_content, dict], …)</p></td>
+<td><p>Method that allows you to construct a message that will be send to either a specified agent, a team of agents or all agents.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 69%" />
+<col style="width: 31%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><strong>is_action_possible</strong></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
 <dt id="matrxs.agents.human_agent_brain.HumanAgentBrain.__init__">
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.agents.human_agent_brain.HumanAgentBrain.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.agents.human_agent_brain.HumanAgentBrain.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates an Human Agent which is an agent that can be controlled by a human.</p>
 </dd></dl>
 
@@ -190,38 +225,38 @@
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.agents.human_agent_brain.HumanAgentBrain.__init__" title="matrxs.agents.human_agent_brain.HumanAgentBrain.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.agents.human_agent_brain.HumanAgentBrain.__init__" title="matrxs.agents.human_agent_brain.HumanAgentBrain.__init__"><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code></a>(self)</p></td>
 <td><p>Creates an Human Agent which is an agent that can be controlled by a human.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">decide_on_action</span></code>(state)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">decide_on_action</span></code>(self, state)</p></td>
 <td><p>In this method you compute your action.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.agents.human_agent_brain.HumanAgentBrain.filter_observations" title="matrxs.agents.human_agent_brain.HumanAgentBrain.filter_observations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter_observations</span></code></a>(state)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#matrxs.agents.human_agent_brain.HumanAgentBrain.filter_observations" title="matrxs.agents.human_agent_brain.HumanAgentBrain.filter_observations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter_observations</span></code></a>(self, state)</p></td>
 <td><p>All our agent work through the OODA-loop paradigm; first you observe, then you orient/pre-process, followed by a decision process of an action after which we act upon the action.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.agents.human_agent_brain.HumanAgentBrain.filter_userinputs" title="matrxs.agents.human_agent_brain.HumanAgentBrain.filter_userinputs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter_userinputs</span></code></a>(userinputs)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#matrxs.agents.human_agent_brain.HumanAgentBrain.filter_userinputs" title="matrxs.agents.human_agent_brain.HumanAgentBrain.filter_userinputs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter_userinputs</span></code></a>(self, userinputs)</p></td>
 <td><p>From the received userinput, only keep those which are actually Connected to a specific agent action</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialize</span></code>()</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialize</span></code>(self)</p></td>
 <td><p>Method called the very first time this AgentBrain is called from the world.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_action_possible</span></code>(action, action_kwargs)</p></td>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_action_possible</span></code>(self, action, action_kwargs)</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_message</span></code>(message_content[, to_id])</p></td>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">send_message</span></code>(self, message_content, dict], …)</p></td>
 <td><p>Method that allows you to construct a message that will be send to either a specified agent, a team of agents or all agents.</p></td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
 <dt>
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span></dt>
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">self</em><span class="sig-paren">)</span></dt>
 <dd><p>Creates an Human Agent which is an agent that can be controlled by a human.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="matrxs.agents.human_agent_brain.HumanAgentBrain.filter_observations">
-<code class="sig-name descname">filter_observations</code><span class="sig-paren">(</span><em class="sig-param">state</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.agents.human_agent_brain.HumanAgentBrain.filter_observations" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">filter_observations</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">state</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.agents.human_agent_brain.HumanAgentBrain.filter_observations" title="Permalink to this definition">¶</a></dt>
 <dd><p>All our agent work through the OODA-loop paradigm; first you observe, then you orient/pre-process, followed by
 a decision process of an action after which we act upon the action.</p>
 <p>However, as a human agent is controlled by a human, only the observe part is executed.</p>
@@ -241,7 +276,7 @@ properties an certain objects.</p>
 
 <dl class="method">
 <dt id="matrxs.agents.human_agent_brain.HumanAgentBrain.filter_userinputs">
-<code class="sig-name descname">filter_userinputs</code><span class="sig-paren">(</span><em class="sig-param">userinputs</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.agents.human_agent_brain.HumanAgentBrain.filter_userinputs" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">filter_userinputs</code><span class="sig-paren">(</span><em class="sig-param">self</em>, <em class="sig-param">userinputs</em><span class="sig-paren">)</span><a class="headerlink" href="#matrxs.agents.human_agent_brain.HumanAgentBrain.filter_userinputs" title="Permalink to this definition">¶</a></dt>
 <dd><p>From the received userinput, only keep those which are actually Connected
 to a specific agent action</p>
 </dd></dl>
