@@ -20,4 +20,4 @@ python:
     - requirements: requirements.txt
 
 build:
-image: latest
+  image: latest
