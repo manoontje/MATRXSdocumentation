@@ -92,6 +92,6 @@ worlds simultaneously, but for now we run only one instance. Do not forget to im
             world.run()
 Now run the main file to see the scene below.
 
-.. image:: images/tutorial_worlds.png
+.. image:: ./images/tutorial_worlds.PNG
   :width: 400
   :alt: An image showing the world created in this tutorial.
