@@ -40,7 +40,7 @@ where one of the room's walls is, otherwise an exception is thrown.
 The doors in the rooms can be opened by agents. The OpenDoor action in :ref:`Actions` can be implemented in an
 autonomous agent's brain, or be activated after input by a human agent.
 
-.. image:: ./images/objects_tutorial.png
+.. image:: ./images/objects_tutorial.PNG
   :width: 400
   :alt: An image showing what can be done after adding objects to a world.
 
