@@ -18,7 +18,7 @@ Learn the basics
 BW4T
 ----
 
-- :ref:`Part 1: Setting up the skeleton`
+- :ref:`Part 1- Setting up the skeleton`
 - :ref:`Part 2: Action plan`
 
 Once more MATRXS tutorials are available, you can find them here.
