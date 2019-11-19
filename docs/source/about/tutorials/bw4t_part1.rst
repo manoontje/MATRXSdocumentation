@@ -1,7 +1,7 @@
-.. _Part 1- Setting up the skeleton
+.. _Part 1: Setting up the skeleton
 
 
-Part 1- Setting up the skeleton
+Part 1: Setting up the skeleton
 ===============================
 
 In this series of tutorials, we will create the scenario of two agents co-operating to find, grab and deliver a certain sequence
